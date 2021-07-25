@@ -15,7 +15,7 @@ public class TextReader {
         readFile(fileName);
     }
 
-    public void readFile(String fileName) {
+    private void readFile(String fileName) {
         String text;
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
             while ((text = reader.readLine()) != null) {
