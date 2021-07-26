@@ -29,8 +29,9 @@ public class Main {
                             list.forEach(System.out::println);
                             System.out.println("Enter index (0 - " + (size - 1) + "):");
                             int index = parseInt(r.readLine());
-                            if (checkBounds(index, size))
+                            if (checkBounds(index, size)) {
                                 doHomeWork(index, list);
+                            }
                         }
                     }
                 }
